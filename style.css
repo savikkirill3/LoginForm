@@ -1,0 +1,78 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: bord
+}
+
+body {
+  align-items: center;
+  background-color: #E9E9E9;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  align-items: center;
+  background-color: snow;
+  border-radius: .5rem;
+  box-shadow: 0 0 2rem rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem 6rem;
+}
+
+.card-title {
+  margin-bottom: 2rem;
+}
+
+.card-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field > * {
+  display: block;
+}
+
+.input-field > label {
+  color: rgb(161, 161, 161);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.input-field > input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  outline: none;
+  padding: 0 .5rem .5rem;
+}
+
+.card-action {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.card-action > button {
+  background-color: #E9E9E9;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  padding: .7rem;
+  margin: 0 auto;
+  transition: .2s;
+  width: 60%;
+}
+
+.card-action > button:hover {
+  background-color: rgb(226, 226, 226);
+}
