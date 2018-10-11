@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>LoginForm</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <title>LoginForm</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <form class="card">
-    <div class="card-content">
-        <span class="card-title">HR APP</span>
+  <div class="card-content">
+    <span class="card-title">HR APP</span>
 
-        <div class="input-field">
-            <label for="login">Login:</label>
-            <input id="login" type="text" required>
-        </div>
-        <div class="input-field">
-            <label for="email">Email:</label>
-            <input id="email" type="email" required>
-        </div>
-        <div class="input-field">
-            <label for="password">Password:</label>
-            <input id="password" type="password" required>
-        </div>
+    <div class="input-field">
+      <label for="login">Login:</label>
+      <input id="login" type="text" minlength="2" required>
     </div>
-    <div class="card-action">
-        <button type = "submit" class="">Log in</button>
+    <div class="input-field">
+      <label for="email">Email:</label>
+      <input id="email" type="email" minlength="2" pattern="*/[@]{1}[a-z]" required>
     </div>
+    <div class="input-field">
+      <label for="password">Password:</label>
+      <input id="password" type="password" required>
+    </div>
+  </div>
+  <div class="card-action">
+    <button type="submit" class="">Log in</button>
+  </div>
 </form>
 
 </body>
 </html>
-

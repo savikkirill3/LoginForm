@@ -22,7 +22,7 @@ body {
   align-items: center;
   background-color: snow;
   border-radius: .5rem;
-  box-shadow: 0 0 2rem rgba(0,0,0,.2);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
   display: flex;
   flex-direction: column;
   padding: 3rem 4rem 6rem;
@@ -30,6 +30,7 @@ body {
 
 .card-title {
   margin-bottom: 2rem;
+  color: rgb(175, 175, 175);
 }
 
 .card-content {
@@ -43,17 +44,18 @@ body {
 }
 
 .input-field > label {
-  color: rgb(161, 161, 161);
+  color: rgb(180, 180, 180);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 .input-field > input {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(190, 190, 190);
   margin-bottom: 2rem;
   outline: none;
   padding: 0 .5rem .5rem;
+  background-color: snow;
 }
 
 .card-action {
@@ -62,7 +64,8 @@ body {
 }
 
 .card-action > button {
-  background-color: #E9E9E9;
+  background-color: rgb(230, 230, 230);
+  color: rgb(180, 180, 180);
   border: none;
   border-radius: 2px;
   cursor: pointer;
