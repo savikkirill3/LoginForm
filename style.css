@@ -5,7 +5,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: bord
+  box-sizing: border-box;
 }
 
 body {
@@ -39,9 +39,33 @@ body {
   flex-direction: column;
 }
 
+.input-field {
+  position: relative;
+}
+
 .input-field > * {
   display: block;
 }
+
+/* ========================= INPUT :FOCUS BORDER_BOTTOM ANIMATION ================================== */
+
+.decorator {
+  background-color: rgb(185, 185, 185);
+  bottom: 2rem;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: .2S;
+  transform: scale(0);
+  width: 100%;
+  /* transform: scale(1); */
+}
+
+input:focus + .decorator {
+  transform: scale(1);
+}
+
+/* ========================= the end INPUT :FOCUS BORDER_BOTTOM ANIMATION ================================== */
 
 .input-field > label {
   color: rgb(180, 180, 180);
@@ -78,4 +102,6 @@ body {
 
 .card-action > button:hover {
   background-color: rgb(226, 226, 226);
+  color: rgb(116, 116, 116);
 }
+
