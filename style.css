@@ -5,7 +5,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: bord
+  box-sizing: border-box;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
   align-items: center;
   background-color: snow;
   border-radius: .5rem;
-  box-shadow: 0 0 2rem rgba(0,0,0,.2);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
   display: flex;
   flex-direction: column;
   padding: 3rem 4rem 6rem;
@@ -30,6 +30,7 @@ body {
 
 .card-title {
   margin-bottom: 2rem;
+  color: rgb(175, 175, 175);
 }
 
 .card-content {
@@ -38,22 +39,47 @@ body {
   flex-direction: column;
 }
 
+.input-field {
+  position: relative;
+}
+
 .input-field > * {
   display: block;
 }
 
+/* ========================= INPUT :FOCUS BORDER_BOTTOM ANIMATION ================================== */
+
+.decorator {
+  background-color: rgb(185, 185, 185);
+  bottom: 2rem;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: .2S;
+  transform: scale(0);
+  width: 100%;
+  /* transform: scale(1); */
+}
+
+input:focus + .decorator {
+  transform: scale(1);
+}
+
+/* ========================= the end INPUT :FOCUS BORDER_BOTTOM ANIMATION ================================== */
+
 .input-field > label {
-  color: rgb(161, 161, 161);
+  color: rgb(180, 180, 180);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 .input-field > input {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(190, 190, 190);
   margin-bottom: 2rem;
   outline: none;
   padding: 0 .5rem .5rem;
+  background-color: snow;
 }
 
 .card-action {
@@ -62,7 +88,8 @@ body {
 }
 
 .card-action > button {
-  background-color: #E9E9E9;
+  background-color: rgb(230, 230, 230);
+  color: rgb(180, 180, 180);
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -75,4 +102,6 @@ body {
 
 .card-action > button:hover {
   background-color: rgb(226, 226, 226);
+  color: rgb(116, 116, 116);
 }
+
