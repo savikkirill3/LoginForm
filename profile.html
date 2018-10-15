@@ -12,8 +12,12 @@
   <div class="card-content">
     <span class="card-title">CREATE PROFILE</span>
     <div class="add-photo">
-      <div id="preview"></div>
-      <label for="photo">Select photo</label>
+      <div id="holder"><div id="preview"></div></div>
+      <div class="card-action">
+        <button>
+          <label class="photo" for="photo">Select photo</label>
+        </button>
+      </div>
       <input id="photo" type="file" accept="image/*" onchange="handleFiles(this.files)" style="display:none">
     </div>
     <div class="input-field">

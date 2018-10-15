@@ -1,17 +1,7 @@
-/*
-$('document').ready(function(){
-  ShowPhoto();
-});
-
-function ShowPhoto(){
-  let inputFile = document.getElementById('input').files;
-  var file = inputFile[0];
-  console.log(file);
-}*/
-
 function handleFiles(FileList){
   let file = FileList[0];
   let preview = document.getElementById('preview');
+  preview.innerHTML= '';
   let img = document.createElement("img");
   img.classList.add("obj");
   img.file = file;

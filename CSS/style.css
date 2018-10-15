@@ -105,3 +105,23 @@ input:focus + .decorator {
   color: rgb(116, 116, 116);
 }
 
+#holder {
+  border-radius: 50% 50% 50% 50%;
+  border: 1px black solid;
+  height: 20rem;
+  width: 20rem;
+}
+
+#holder div{
+  display: table-cell;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+img {
+  border-radius: 50% 50% 50% 50%;
+  height: 20rem;
+  width: 20rem;
+}
