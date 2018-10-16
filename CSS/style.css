@@ -18,6 +18,30 @@ body {
   height: 100vh;
 }
 
+/* ========================= SINGLE FORM ================================== */
+.card-content--form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.card-content--form .decorator {
+  bottom: 2rem;
+}
+
+.card-content--form .card-action > button {
+  width: 70%;
+}
+
+.card-content--form .or {
+  color: rgb(175, 175, 175);
+  display: block;
+  margin-top: 1rem;
+}
+
+/* ========================= SINGLE FORM ================================== */
+
 .card {
   align-items: center;
   background-color: snow;
