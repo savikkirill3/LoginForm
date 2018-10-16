@@ -25,18 +25,31 @@ body {
   box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
   display: flex;
   flex-direction: column;
-  padding: 3rem 4rem 6rem;
+  padding: 3rem 8rem 3rem;
 }
 
+
+.card-content {
+  align-items: center;
+  display: grid;
+  column-gap: 10rem;
+  justify-items: center;
+  grid-template-columns: 2fr 3fr;
+  row-gap: 3rem;
+}
+
+
 .card-title {
+  font-size: 1.6rem;
+  font-weight: 100;
+  grid-column: 1 / -1;
   margin-bottom: 2rem;
   color: rgb(175, 175, 175);
 }
 
-.card-content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+.input-area {
+  justify-self: stretch;
+  padding: 0 2rem;
 }
 
 .input-field {
@@ -51,7 +64,7 @@ body {
 
 .decorator {
   background-color: rgb(185, 185, 185);
-  bottom: 2rem;
+  bottom: 0;
   display: block;
   height: 2px;
   position: absolute;
@@ -80,11 +93,21 @@ input:focus + .decorator {
   outline: none;
   padding: 0 .5rem .5rem;
   background-color: snow;
+  width: 100%;
 }
 
 .card-action {
+  grid-column: 1 / -1;
   margin-top: 1rem;
   width: 100%;
+}
+
+.card-action > .card-action--upload {
+  width: 55%;
+}
+
+.card-action > .card-action--upload:hover > label {
+  cursor: pointer;
 }
 
 .card-action > button {
@@ -97,7 +120,7 @@ input:focus + .decorator {
   padding: .7rem;
   margin: 0 auto;
   transition: .2s;
-  width: 60%;
+  width: 25%;
 }
 
 .card-action > button:hover {
@@ -107,21 +130,20 @@ input:focus + .decorator {
 
 #holder {
   border-radius: 50% 50% 50% 50%;
-  border: 1px black solid;
+  border: 1px rgb(190, 190, 190) solid;
   height: 20rem;
+  overflow: hidden;
   width: 20rem;
 }
 
-#holder div{
-  display: table-cell;
-  height: 200px;
-  width: 200px;
-  text-align: center;
-  vertical-align: middle;
+#preview {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
-img {
-  border-radius: 50% 50% 50% 50%;
-  height: 20rem;
-  width: 20rem;
+#preview img {
+  object-fit: cover;
+  width: 100%;
 }
+

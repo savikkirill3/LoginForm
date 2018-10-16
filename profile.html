@@ -5,41 +5,44 @@
   <title>Create profile</title>
   <link rel="stylesheet" href="CSS/style.css">
   <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/create-profile.js"></script>
 </head>
 <body>
 <form class="card">
   <div class="card-content">
-    <span class="card-title">CREATE PROFILE</span>
+    <h2 class="card-title">CREATE PROFILE</h2>
     <div class="add-photo">
       <div id="holder"><div id="preview"></div></div>
       <div class="card-action">
-        <button>
+        <button class="card-action--upload">
           <label class="photo" for="photo">Select photo</label>
         </button>
       </div>
       <input id="photo" type="file" accept="image/*" onchange="handleFiles(this.files)" style="display:none">
     </div>
-    <div class="input-field">
-      <label for="name">Name:</label>
-      <input id="name" type="text" minlength="2" required>
-      <div class="decorator"></div>
+    <div class="input-area">
+      <div class="input-field">
+        <label for="name">Name:</label>
+        <input id="name" type="text" minlength="2" required>
+        <div class="decorator"></div>
+      </div>
+      <div class="input-field">
+        <label for="surname">Surname:</label>
+        <input id="surname" type="text" minlength="2" required>
+        <div class="decorator"></div>
+      </div>
+      <div class="input-field">
+        <label for="phone">Phone:</label>
+        <input id="phone" type="text" minlength="12" pattern="\d[+][0-9]{,12}" required>
+        <div class="decorator"></div>
+      </div>
     </div>
-    <div class="input-field">
-      <label for="surname">Surname:</label>
-      <input id="surname" type="text" minlength="2" required>
-      <div class="decorator"></div>
+    <div class="card-action">
+      <button type="submit" class="">Create profile</button>
     </div>
-    <div class="input-field">
-      <label for="phone">Phone:</label>
-      <input id="phone" type="text" minlength="12" pattern="\d[+][0-9]{,12}" required>
-      <div class="decorator"></div>
-    </div>
-  </div>
-  <div class="card-action">
-    <button type="submit" class="">Create profile</button>
   </div>
 
 </form>
+
+<script src="js/create-profile.js"></script>
 </body>
 </html>
