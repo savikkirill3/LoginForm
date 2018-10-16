@@ -20,4 +20,4 @@
 
 ## Result
 
-<img src="https://i.imgur.com/Tz1hpXH.gif" width="400">
+<img src="https://imgur.com/8onqoZu" width="400">
